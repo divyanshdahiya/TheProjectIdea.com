@@ -46,13 +46,13 @@ function Footer() {
                 <a href="/">Home</a>
               </li>
               <li>
-                <a href="/">Notices And Circulars</a>
+                <a href="/">Home</a>
               </li>
               <li>
-                <a href="/">Gallery</a>
+                <a href="/">Home</a>
               </li>
               <li>
-                <a href="/">MYAS Compliance</a>
+                <a href="/">Home</a>
               </li>
             </ul>
           </div>
@@ -60,16 +60,16 @@ function Footer() {
             <h2>Quick Links</h2>
             <ul>
               <li>
-                <a href="./">Elections 2020</a>
+                <a href="./">Home</a>
               </li>
               <li>
-                <a href="/">Anti-Doping</a>
+                <a href="/">Home</a>
               </li>
               <li>
-                <a href="/">Rules & Regulations</a>
+                <a href="/">RHome</a>
               </li>
               <li>
-                <a href="/">STFI History</a>
+                <a href="/">Home</a>
               </li>
             </ul>
           </div>
