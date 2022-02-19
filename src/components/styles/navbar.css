@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 80px;
+  background-color: #ffffff;
+  color: #ffbe00;
+
+  border-bottom: solid 2px #ffbe00;
+  box-shadow: 0 1px 66px -20px #ffbe00;
+  margin-bottom: 20px;
+}
+.navbar h1 {
+  font-family: "Pacifico", cursive;
+}
+.nav-logo {
+  display: flex;
+  font-size: 2rem;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #ffbe00;
+  align-items: center;
+}
+.nav-logo h1 {
+  font-size: 35px;
+  align-items: center;
+}
+.nav-logo-img {
+  width: 60px;
+}
+.nav-links {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  width: 75%;
+}
+.nav-link {
+  text-decoration: none;
+  color: #000000;
+  font-size: 25px;
+  padding: 5px 10px;
+  margin: 0 10px;
+  cursor: pointer;
+}
+.nav-link:hover {
+  color: #000000;
+  background-color: #ffe081;
+  border-radius: 40px;
+}
+.mobile-menu-icon {
+  display: none;
+}
+@media screen and (max-width: 1050px) {
+  .nav-logo {
+    display: flex;
+    position: absolute;
+    top: 15px;
+    left: 35px;
+  }
+  .nav-links {
+    display: none;
+  }
+  .nav-link {
+    color: #000000;
+    text-align: center;
+    padding: 32px;
+    width: 100%;
+    transition: all 0.5s ease;
+  }
+  .nav-links-mobile {
+    position: absolute;
+    display: block;
+    list-style: none;
+    background-color: #ffffff;
+    left: 0;
+    top: 80px;
+    transition: all 0.5s ease-out;
+    width: 100%;
+    border-bottom: solid 2px #ffbe00;
+  }
+  .mobile-menu-icon {
+    display: block;
+    position: absolute;
+    font-size: 30px;
+    color: #ffbe00;
+    background-color: #ffffff;
+    border: none;
+    outline: none;
+    top: 27px;
+    right: 50px;
+  }
+}
+@media screen and (max-width: 595px) {
+  .navbar {
+    height: 100px;
+  }
+  .nav-logo {
+    display: flex;
+    font-size: 20px;
+    font-size: 1.3rem;
+    letter-spacing: 1px;
+    text-decoration: none;
+    left: 10px;
+  }
+  .nav-logo-img {
+    width: 70px;
+  }
+  .nav-logo h1 {
+    font-size: 30px;
+  }
+  .mobile-menu-icon {
+    top: 38px;
+    right: 25px;
+  }
+  .nav-links-mobile {
+    left: 0;
+    top: 100px;
+  }
+  .nav-link {
+    font-size: 1.4rem;
+    padding: 1px 1px;
+  }
+}
