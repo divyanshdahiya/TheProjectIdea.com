@@ -17,7 +17,7 @@ function Header() {
               the gap between learning and applying new skills through projects!
             </p>
             <button>
-              <a href="">Get Started</a>
+              <a href="/">Get Started</a>
             </button>
           </div>
           <div>

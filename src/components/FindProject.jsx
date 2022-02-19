@@ -15,7 +15,7 @@ function FindProject() {
       </div>
       <div className="div-btn">
         <button className="container-findproject-btn">
-          <a className="container-findproject-btn-a" href="">
+          <a className="container-findproject-btn-a" href="/">
             View all Projects
           </a>
         </button>

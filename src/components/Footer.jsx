@@ -18,29 +18,23 @@ function Footer() {
             </p>
             <ul class="social">
               <li>
-                <a
-                  href="https://www.facebook.com/Sepaktakraw-india-1410783925801178"
-                  target="_blank"
-                >
+                <a href="/" target="_blank">
                   <i class="fa fa-facebook-official" aria-hidden="true"></i>
                 </a>
               </li>
               <li>
-                <a
-                  href="https://www.youtube.com/channel/UCFv0HgcL8GT9754jCjvNyjA/featured"
-                  target="_blank"
-                >
-                  <i class="fa fa-youtube-play" aria-hidden="true"></i>
+                <a href="/" target="_blank">
+                  {/* <i class="fa fa-youtube-play" aria-hidden="true"></i> */}
                 </a>
               </li>
               <li>
-                <a href="">
-                  <i class="fa fa-instagram" aria-hidden="true"></i>
+                <a href="/">
+                  {/* <i class="fa fa-instagram" aria-hidden="true"></i> */}
                 </a>
               </li>
               <li>
-                <a href="">
-                  <i class="fa fa-twitter" aria-hidden="true"></i>
+                <a href="/">
+                  {/* <i class="fa fa-twitter" aria-hidden="true"></i> */}
                 </a>
               </li>
             </ul>
@@ -49,16 +43,16 @@ function Footer() {
             <h2>Quick Links</h2>
             <ul>
               <li>
-                <a href="./#section1">Home</a>
+                <a href="/">Home</a>
               </li>
               <li>
-                <a href="./notices-and-circulars.html">Notices And Circulars</a>
+                <a href="/">Notices And Circulars</a>
               </li>
               <li>
-                <a href="./#gallery">Gallery</a>
+                <a href="/">Gallery</a>
               </li>
               <li>
-                <a href="./MYAS-compliance.html">MYAS Compliance</a>
+                <a href="/">MYAS Compliance</a>
               </li>
             </ul>
           </div>
@@ -66,16 +60,16 @@ function Footer() {
             <h2>Quick Links</h2>
             <ul>
               <li>
-                <a href="./election2020.html">Elections 2020</a>
+                <a href="./">Elections 2020</a>
               </li>
               <li>
-                <a href="./antidoping.html">Anti-Doping</a>
+                <a href="/">Anti-Doping</a>
               </li>
               <li>
-                <a href="./rules-&-regulations.html">Rules & Regulations</a>
+                <a href="/">Rules & Regulations</a>
               </li>
               <li>
-                <a href="./history.html">STFI History</a>
+                <a href="/">STFI History</a>
               </li>
             </ul>
           </div>

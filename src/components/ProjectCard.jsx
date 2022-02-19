@@ -41,7 +41,7 @@ function ProjectCard({ data }) {
         <span>HTMl</span>
       </p>
       <button className="card-btn">
-        <a href="" target="blank">
+        <a href="/" target="blank">
           View Project
         </a>
       </button>
