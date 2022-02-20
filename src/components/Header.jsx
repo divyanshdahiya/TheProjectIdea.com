@@ -4,6 +4,7 @@ import "./styles/home.css";
 import { BiSelectMultiple } from "react-icons/bi";
 import { BiDownload } from "react-icons/bi";
 import { BiCodeAlt } from "react-icons/bi";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -16,9 +17,10 @@ function Header() {
               Still writing “Hello World” ? Build real-world projects. Bridge
               the gap between learning and applying new skills through projects!
             </p>
-            <button>
-              <a href="/">Get Started</a>
-            </button>
+
+            <Link to="/allProjects">
+              <button>Get Started</button>
+            </Link>
           </div>
           <div>
             <img className="header-img" src={image} alt="" />

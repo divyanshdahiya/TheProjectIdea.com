@@ -1,16 +1,7 @@
-import React, { useEffect, useState } from "react";
-import Axios from "axios";
+import React from "react";
 import ProjectCard from "./ProjectCard";
 
-function AllProjects() {
-  const [ListOfProjects, setListOfProjects] = useState([]);
-
-  useEffect(() => {
-    Axios.get("http://localhost:3001/getProjects").then((response) => {
-      setListOfProjects(response.data);
-    });
-  }, []);
-
+function AllProjects({ ListOfProjects }) {
   return (
     <div>
       {ListOfProjects.map((data) => {

@@ -33,7 +33,6 @@
   display: flex;
   justify-content: flex-end;
   list-style: none;
-  width: 75%;
 }
 .nav-link {
   text-decoration: none;
