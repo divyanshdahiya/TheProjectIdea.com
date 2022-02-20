@@ -13,7 +13,7 @@ function FindProject({ ListOfProjects }) {
         {ListOfProjects.slice(0, 3).map((data) => {
           return (
             <>
-              <ProjectCard data={data} />
+              <ProjectCard data={data} key={data.id} />
             </>
           );
         })}

@@ -26,7 +26,7 @@ function AllProjects({ ListOfProjects }) {
           {ListOfProjects.map((data) => {
             return (
               <>
-                <ProjectCard data={data} />
+                <ProjectCard data={data} key={data._id} />
               </>
             );
           })}

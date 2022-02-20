@@ -16,14 +16,11 @@ function ProjectCard({ data }) {
             </>
           );
         })}
-        <span>JavaScript</span>
-        <span>HTMl</span>
       </p>
-      <button className="card-btn">
-        <a href={data.link} target="blank">
-          View Project ->
-        </a>
-      </button>
+
+      <a href={data.link} target="blank">
+        <button className="card-btn">View Project -></button>
+      </a>
     </div>
     // <div className="project-card">
     //   <span className="card-diificulty">Easy</span>

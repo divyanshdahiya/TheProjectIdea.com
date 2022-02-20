@@ -5,21 +5,21 @@ import "./styles/footer.css";
 function Footer() {
   return (
     <div>
-      <div id="footer" class="footer-above">
-        <img class="footer-img" src={wave} alt="footer" />
+      <div id="footer" className="footer-above">
+        <img className="footer-img" src={wave} alt="footer" />
       </div>
       <footer>
-        <div class=" footer-content container-footer">
-          <div class="sec about">
+        <div className=" footer-content container-footer">
+          <div className="sec about">
             <h2>About Us</h2>
             <p>
               Still writing “Hello World” ? Build real-world projects. Bridge
               the gap between learning and applying new skills through projects!
             </p>
-            <ul class="social">
+            <ul className="social">
               <li>
                 <a href="/" target="_blank">
-                  <i class="fa fa-facebook-official" aria-hidden="true"></i>
+                  <i className="fa fa-facebook-official" aria-hidden="true"></i>
                 </a>
               </li>
               <li>
@@ -39,7 +39,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div class="sec quick-links">
+          <div className="sec quick-links">
             <h2>Quick Links</h2>
             <ul>
               <li>
@@ -56,7 +56,7 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div class="sec quick-links">
+          <div className="sec quick-links">
             <h2>Quick Links</h2>
             <ul>
               <li>
@@ -75,7 +75,7 @@ function Footer() {
           </div>
         </div>
       </footer>
-      <div class="copyright">
+      <div className="copyright">
         <p>
           Copyright © {new Date().getFullYear()} The Project Idea. All Rights
           Reserved

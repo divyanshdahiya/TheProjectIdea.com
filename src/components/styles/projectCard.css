@@ -58,7 +58,10 @@
 .card-tech {
   margin: 20px 0;
 }
-
+.card-tech span {
+  padding: 5px;
+  font-size: 1.1em;
+}
 .card-btn {
   padding: 15px;
   font-size: 17px;
@@ -133,6 +136,9 @@
   }
 }
 @media screen and (max-width: 849px) {
+  .container-findproject {
+    width: 95%;
+  }
   .project-card {
     max-width: 92%;
   }
