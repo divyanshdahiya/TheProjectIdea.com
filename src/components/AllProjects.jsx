@@ -17,8 +17,7 @@ function AllProjects({ ListOfProjects }) {
               Bridge the gap between theory and real-world code by working on
               curated web development projects. Build projects to make your
               portfolio stand out from others. From beginner web development
-              projects to more advanced ones, find your next coding project
-              now!!
+              projects to more advanced ones, find your next coding project now!
             </p>
           </div>
         </div>
