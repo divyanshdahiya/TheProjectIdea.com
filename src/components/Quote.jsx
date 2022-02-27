@@ -1,5 +1,5 @@
 import React from "react";
-import quoteLogo from "../images/quote.png";
+import quoteLogo from "../images/quote1.png";
 import "./styles/quote.css";
 function Quote() {
   return (

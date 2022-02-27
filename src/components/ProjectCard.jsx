@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Link } from "react-router-dom";
 // css imported in find projects.jsx
 
 function ProjectCard({ data }) {
@@ -18,9 +18,9 @@ function ProjectCard({ data }) {
         })}
       </p>
 
-      <a href={data.link} target="blank">
+      <Link to="/ProjectDetails">
         <button className="card-btn">View Project -></button>
-      </a>
+      </Link>
     </div>
     // <div className="project-card">
     //   <span className="card-diificulty">Easy</span>

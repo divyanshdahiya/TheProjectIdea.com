@@ -8,6 +8,7 @@ import AllProjects from "./components/AllProjects";
 import Footer from "./components/Footer";
 import React, { useState, useEffect } from "react";
 import Axios from "axios";
+import ProjectDetail from "./components/ProjectDetail";
 
 function App() {
   const [ListOfProjects, setListOfProjects] = useState([]);
@@ -34,6 +35,9 @@ function App() {
           </Route>
           <Route path="/allProjects" component={AllProjects} exact>
             <AllProjects ListOfProjects={ListOfProjects} />
+          </Route>
+          <Route path="/ProjectDetail" component={ProjectDetail} exact>
+            <ProjectDetail ListOfProjects={ListOfProjects} />
           </Route>
         </Switch>
         <Footer />
