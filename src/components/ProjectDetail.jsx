@@ -1,9 +1,11 @@
 import React from "react";
 
-function ProjectDetail() {
+function ProjectDetail({ ProjectInfo }) {
+  console.log(ProjectInfo);
+
   return (
     <div>
-      <h1>oeifwowf</h1>
+      <h1>weofinwoefn</h1>
     </div>
   );
 }

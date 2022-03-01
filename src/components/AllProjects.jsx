@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard";
 import "./styles/allProjects.css";
 import Image from "../images/allprojects-header.png";
 
-function AllProjects({ ListOfProjects }) {
+function AllProjects({ ListOfProjects, setProjectInfo }) {
   return (
     <>
       <div className="allProjects-container">
@@ -25,7 +25,11 @@ function AllProjects({ ListOfProjects }) {
           {ListOfProjects.map((data) => {
             return (
               <>
-                <ProjectCard data={data} key={data._id} />
+                <ProjectCard
+                  data={data}
+                  key={data._id}
+                  setProjectInfo={setProjectInfo}
+                />
               </>
             );
           })}

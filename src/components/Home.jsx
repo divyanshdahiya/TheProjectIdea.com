@@ -3,11 +3,14 @@ import Header from "./Header";
 import FindProject from "./FindProject";
 import Quote from "./Quote";
 
-function Home({ ListOfProjects }) {
+function Home({ ListOfProjects, setProjectInfo }) {
   return (
     <div>
       <Header />
-      <FindProject ListOfProjects={ListOfProjects} />
+      <FindProject
+        ListOfProjects={ListOfProjects}
+        setProjectInfo={setProjectInfo}
+      />
       <Quote />
     </div>
   );

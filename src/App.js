@@ -12,6 +12,7 @@ import ProjectDetail from "./components/ProjectDetail";
 
 function App() {
   const [ListOfProjects, setListOfProjects] = useState([]);
+  const [ProjectInfo, setProjectInfo] = useState({});
 
   useEffect(() => {
     Axios.get("http://localhost:3001/getProjects").then((response) => {
@@ -25,7 +26,10 @@ function App() {
         <Navbar />
         <Switch>
           <Route path="/" component={Home} exact>
-            <Home ListOfProjects={ListOfProjects} />
+            <Home
+              ListOfProjects={ListOfProjects}
+              setProjectInfo={setProjectInfo}
+            />
           </Route>
           <Route path="/about" component={About} exact>
             <About />
@@ -34,10 +38,13 @@ function App() {
             <Contact />
           </Route>
           <Route path="/allProjects" component={AllProjects} exact>
-            <AllProjects ListOfProjects={ListOfProjects} />
+            <AllProjects
+              ListOfProjects={ListOfProjects}
+              setProjectInfo={setProjectInfo}
+            />
           </Route>
           <Route path="/ProjectDetail" component={ProjectDetail} exact>
-            <ProjectDetail ListOfProjects={ListOfProjects} />
+            <ProjectDetail ProjectInfo={ProjectInfo} />
           </Route>
         </Switch>
         <Footer />
