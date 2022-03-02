@@ -18,17 +18,21 @@ function ProjectCard({ data, setProjectInfo }) {
         })}
       </p>
 
-      <Link
-        to="/ProjectDetail"
-        // onClick={setProjectInfo({
-        //   difficulty: data.difficulty,
-        //   description: data.description,
-        //   tittle: data.tittle,
-        //   tech: data.tech,
-        //   link: data.link,
-        // })}
-      >
-        <button className="card-btn">View Project -></button>
+      <Link to="/ProjectDetail">
+        <button
+          className="card-btn"
+          onClick={() =>
+            setProjectInfo({
+              difficulty: data.difficulty,
+              description: data.description,
+              tittle: data.tittle,
+              tech: data.tech,
+              link: data.link,
+            })
+          }
+        >
+          View Project -
+        </button>
       </Link>
     </div>
   );

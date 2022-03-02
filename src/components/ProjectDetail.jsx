@@ -5,7 +5,7 @@ function ProjectDetail({ ProjectInfo }) {
 
   return (
     <div>
-      <h1>weofinwoefn</h1>
+      <h1>{ProjectInfo.difficulty}</h1>
     </div>
   );
 }
