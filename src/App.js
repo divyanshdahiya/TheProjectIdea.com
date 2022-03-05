@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import React, { useState, useEffect } from "react";
 import Axios from "axios";
 import ProjectDetail from "./components/ProjectDetail";
+import ScrollToTop from "./ScrollToTop";
 
 function App() {
   const [ListOfProjects, setListOfProjects] = useState([]);
@@ -23,6 +24,7 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <ScrollToTop />
         <Navbar />
         <Switch>
           <Route path="/" component={Home} exact>
@@ -44,7 +46,11 @@ function App() {
             />
           </Route>
           <Route path="/ProjectDetail" component={ProjectDetail} exact>
-            <ProjectDetail ProjectInfo={ProjectInfo} />
+            <ProjectDetail
+              ProjectInfo={ProjectInfo}
+              ListOfProjects={ListOfProjects}
+              setProjectInfo={setProjectInfo}
+            />
           </Route>
         </Switch>
         <Footer />
