@@ -44,7 +44,7 @@ function ProjectDetail({ ProjectInfo, ListOfProjects, setProjectInfo }) {
       <h2 className="project-detail-middle-heading">More Projects</h2>
 
       <div className="project-detail-other-cards">
-        {ListOfProjects.slice(0, 6).map((data) => {
+        {ListOfProjects.slice(3, 9).map((data) => {
           return (
             <>
               <ProjectCard
