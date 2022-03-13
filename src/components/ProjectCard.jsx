@@ -27,7 +27,9 @@ function ProjectCard({ data, setProjectInfo }) {
               description: data.description,
               tittle: data.tittle,
               tech: data.tech,
-              link: data.link,
+              githublink: data.githublink,
+              articlelink: data.articlelink,
+              videolink: data.videolink,
             })
           }
         >

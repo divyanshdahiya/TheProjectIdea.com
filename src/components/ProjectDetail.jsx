@@ -35,9 +35,18 @@ function ProjectDetail({ ProjectInfo, ListOfProjects, setProjectInfo }) {
 
         <div className="project-detail-links">
           <h3>Project Links -</h3>
-          <button className="card-btn">Github</button>
-          <button className="card-btn">Project Article</button>
-          <button className="card-btn">Project Video</button>
+
+          <a href={ProjectInfo.githublink} target="blank">
+            <button className="card-btn">Github</button>
+          </a>
+
+          <a href={ProjectInfo.articlelink} target="blank">
+            <button className="card-btn">Project Article</button>
+          </a>
+
+          <a href={ProjectInfo.videolink} target="blank">
+            <button className="card-btn">Project Video</button>
+          </a>
         </div>
       </div>
 
