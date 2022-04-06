@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 // css imported in find projects.jsx
 
-function ProjectCard({ data, setProjectInfo }) {
+function ProjectCard({ data, setProjectInfo, setProjectId }) {
   return (
     <div className="project-card">
       <span className="card-diificulty">{data.difficulty}</span>
@@ -21,17 +21,21 @@ function ProjectCard({ data, setProjectInfo }) {
       <Link to="/ProjectDetail">
         <button
           className="card-btn"
-          onClick={() =>
-            setProjectInfo({
-              difficulty: data.difficulty,
-              description: data.description,
-              tittle: data.tittle,
-              tech: data.tech,
-              githublink: data.githublink,
-              articlelink: data.articlelink,
-              videolink: data.videolink,
-            })
-          }
+          // onClick={() =>
+          //   setProjectInfo({
+          //     difficulty: data.difficulty,
+          //     description: data.description,
+          //     tittle: data.tittle,
+          //     tech: data.tech,
+          //     githublink: data.githublink,
+          //     articlelink: data.articlelink,
+          //     videolink: data.videolink,
+          //   })
+          // }
+          onClick={() =>{
+            setProjectId(data._id)
+          console.log(data._id)
+          }}
         >
           View Project -
         </button>

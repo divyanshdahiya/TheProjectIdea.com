@@ -4,7 +4,7 @@ import "./styles/projectCard.css";
 // css in ProjectCard.css
 import { Link } from "react-router-dom";
 
-function FindProject({ ListOfProjects, setProjectInfo }) {
+function FindProject({ ListOfProjects, setProjectInfo, setProjectId }) {
   return (
     <div className="container-findproject">
       <h1 className="find-project-heading1">Find your next project</h1>
@@ -15,8 +15,9 @@ function FindProject({ ListOfProjects, setProjectInfo }) {
             <>
               <ProjectCard
                 data={data}
-                key={data.id}
+                key={data._id}
                 setProjectInfo={setProjectInfo}
+                setProjectId={setProjectId}
               />
             </>
           );

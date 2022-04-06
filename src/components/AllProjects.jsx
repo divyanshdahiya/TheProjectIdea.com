@@ -3,7 +3,7 @@ import ProjectCard from "./ProjectCard";
 import "./styles/allProjects.css";
 import Image from "../images/allprojects-header.png";
 
-function AllProjects({ ListOfProjects, setProjectInfo }) {
+function AllProjects({ ListOfProjects, setProjectInfo, setProjectId }) {
   return (
     <>
       <div className="allProjects-container">
@@ -29,6 +29,7 @@ function AllProjects({ ListOfProjects, setProjectInfo }) {
                   data={data}
                   key={data._id}
                   setProjectInfo={setProjectInfo}
+                  setProjectId={setProjectId}
                 />
               </>
             );

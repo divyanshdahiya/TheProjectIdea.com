@@ -2,8 +2,7 @@ import React from "react";
 import "./styles/projectDetail.css";
 import ProjectCard from "./ProjectCard";
 
-function ProjectDetail({ ProjectInfo, ListOfProjects, setProjectInfo }) {
-  console.log(ProjectInfo);
+function ProjectDetail({ ProjectInfo, ListOfProjects, setProjectInfo, setProjectId }) {
 
   return (
     <>
@@ -60,6 +59,8 @@ function ProjectDetail({ ProjectInfo, ListOfProjects, setProjectInfo }) {
                 data={data}
                 key={data.id}
                 setProjectInfo={setProjectInfo}
+                setProjectId={setProjectId}
+                
               />
             </>
           );

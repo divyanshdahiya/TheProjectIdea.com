@@ -14,12 +14,31 @@ import ScrollToTop from "./ScrollToTop";
 function App() {
   const [ListOfProjects, setListOfProjects] = useState([]);
   const [ProjectInfo, setProjectInfo] = useState({});
+  const [ProjectId, setProjectId] = useState(`6223b9cf13d911bac674eff6`)
 
   useEffect(() => {
     Axios.get("http://localhost:3001/getProjects").then((response) => {
       setListOfProjects(response.data);
     });
   }, []);
+
+  useEffect(() => {
+    Axios.get(`http://localhost:3001/getProjects/${ProjectId}`).then((data) => {
+      
+         setProjectInfo({
+             difficulty: data.data.difficulty,
+            description: data.data.description,
+            tittle: data.data.tittle,
+            tech: data.data.tech,
+            githublink: data.data.githublink,
+            articlelink: data.data.articlelink,
+            videolink: data.data.videolink,
+          })
+      
+       }
+    );
+  }, [ProjectId]);
+
 
   return (
     <div className="App">
@@ -31,6 +50,7 @@ function App() {
             <Home
               ListOfProjects={ListOfProjects}
               setProjectInfo={setProjectInfo}
+              setProjectId={setProjectId}
             />
           </Route>
           <Route path="/about" component={About} exact>
@@ -43,13 +63,15 @@ function App() {
             <AllProjects
               ListOfProjects={ListOfProjects}
               setProjectInfo={setProjectInfo}
+              setProjectId={setProjectId}
             />
           </Route>
-          <Route path="/ProjectDetail" component={ProjectDetail} exact>
+          <Route path = '/ProjectDetail' component={ProjectDetail} exact>
             <ProjectDetail
               ProjectInfo={ProjectInfo}
               ListOfProjects={ListOfProjects}
               setProjectInfo={setProjectInfo}
+              setProjectId={setProjectId}
             />
           </Route>
         </Switch>
