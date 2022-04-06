@@ -1,6 +1,7 @@
 import React from "react";
 import wave from "../images/wave.svg";
 import "./styles/footer.css";
+import { Link } from "react-router-dom";
 
 function Footer() {
   return (
@@ -11,31 +12,31 @@ function Footer() {
       <footer>
         <div className=" footer-content container-footer">
           <div className="sec about">
-            <h2>About Us</h2>
+            <h1>The Project Idea</h1>
             <p>
               Still writing “Hello World” ? Build real-world projects. Bridge
               the gap between learning and applying new skills through projects!
             </p>
             <ul className="social">
               <li>
-                <a href="/" target="_blank">
+                <Link to="/" >
                   <i className="fa fa-facebook-official" aria-hidden="true"></i>
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/" target="_blank">
+                <Link to="/" >
                   {/* <i class="fa fa-youtube-play" aria-hidden="true"></i> */}
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/">
+                <Link to="/">
                   {/* <i class="fa fa-instagram" aria-hidden="true"></i> */}
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/">
+                <Link to="/">
                   {/* <i class="fa fa-twitter" aria-hidden="true"></i> */}
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -43,36 +44,20 @@ function Footer() {
             <h2>Quick Links</h2>
             <ul>
               <li>
-                <a href="/">Home</a>
+              <Link to="/">Home</Link>
               </li>
               <li>
-                <a href="/">Home</a>
+              <Link to="/allProjects">All Projects</Link>
               </li>
               <li>
-                <a href="/">Home</a>
+              <Link to="/">Github</Link>
               </li>
               <li>
-                <a href="/">Home</a>
+              <Link to="/contact">Contact</Link>
               </li>
             </ul>
-          </div>
-          <div className="sec quick-links">
-            <h2>Quick Links</h2>
-            <ul>
-              <li>
-                <a href="./">Home</a>
-              </li>
-              <li>
-                <a href="/">Home</a>
-              </li>
-              <li>
-                <a href="/">RHome</a>
-              </li>
-              <li>
-                <a href="/">Home</a>
-              </li>
-            </ul>
-          </div>
+          </div>  
+         
         </div>
       </footer>
       <div className="copyright">
@@ -80,6 +65,7 @@ function Footer() {
           Copyright © {new Date().getFullYear()} The Project Idea. All Rights
           Reserved
         </p>
+        <p> created by Divyansh Dahiya</p>
       </div>
     </div>
   );

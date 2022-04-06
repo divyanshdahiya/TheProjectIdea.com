@@ -1,3 +1,7 @@
+.sec h1 {
+  font-family: "Pacifico", cursive;
+}
+
 footer {
   display: grid;
   justify-content: end;
@@ -21,7 +25,7 @@ footer {
 footer .container-footer {
   width: 100%;
   display: grid;
-  grid-template-columns: 2fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr ;
   grid-gap: 20px;
 }
 footer .container-footer .sec h2 {
