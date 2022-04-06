@@ -24,14 +24,14 @@ function AllProjects({ ListOfProjects, setProjectInfo, setProjectId }) {
         <div className="allProjects-card">
           {ListOfProjects.map((data) => {
             return (
-              <>
+              
                 <ProjectCard
                   data={data}
                   key={data._id}
                   setProjectInfo={setProjectInfo}
                   setProjectId={setProjectId}
                 />
-              </>
+              
             );
           })}
         </div>

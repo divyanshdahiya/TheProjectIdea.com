@@ -65,7 +65,7 @@ function Footer() {
           Copyright © {new Date().getFullYear()} The Project Idea. All Rights
           Reserved
         </p>
-        <p> created by Divyansh Dahiya</p>
+        <p> Created by Divyansh Dahiya</p>
       </div>
     </div>
   );

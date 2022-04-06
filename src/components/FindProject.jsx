@@ -12,14 +12,14 @@ function FindProject({ ListOfProjects, setProjectInfo, setProjectId }) {
       <div className="home-project">
         {ListOfProjects.slice(0, 3).map((data) => {
           return (
-            <>
+           
               <ProjectCard
                 data={data}
                 key={data._id}
                 setProjectInfo={setProjectInfo}
                 setProjectId={setProjectId}
               />
-            </>
+            
           );
         })}
       </div>
