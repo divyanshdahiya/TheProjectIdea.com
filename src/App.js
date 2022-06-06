@@ -23,7 +23,7 @@ function App() {
   }, []);
 
   useEffect(() => {
-    Axios.get(`https://theprojectidea-divyansh.herokuapp.com/${ProjectId}`).then((data) => {
+    Axios.get(`https://theprojectidea-divyansh.herokuapp.com/getProjects/${ProjectId}`).then((data) => {
       
          setProjectInfo({
              difficulty: data.data.difficulty,
