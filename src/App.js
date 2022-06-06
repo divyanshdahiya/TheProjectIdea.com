@@ -17,13 +17,13 @@ function App() {
   const [ProjectId, setProjectId] = useState(`6223b9cf13d911bac674eff6`)
 
   useEffect(() => {
-    Axios.get("http://localhost:3001/getProjects").then((response) => {
+    Axios.get("https://theprojectidea-divyansh.herokuapp.com/getProjects").then((response) => {
       setListOfProjects(response.data);
     });
   }, []);
 
   useEffect(() => {
-    Axios.get(`http://localhost:3001/getProjects/${ProjectId}`).then((data) => {
+    Axios.get(`https://theprojectidea-divyansh.herokuapp.com/${ProjectId}`).then((data) => {
       
          setProjectInfo({
              difficulty: data.data.difficulty,
