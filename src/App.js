@@ -3,7 +3,7 @@ import Navbar from "./components/Navbar";
 import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
-import Contact from "./components/Contact";
+import Blogs from "./components/Blogs";
 import AllProjects from "./components/AllProjects";
 import Footer from "./components/Footer";
 import React, { useState, useEffect } from "react";
@@ -56,8 +56,8 @@ function App() {
           <Route path="/about" component={About} exact>
             <About />
           </Route>
-          <Route path="/contact" component={Contact} exact>
-            <Contact />
+          <Route path="/blogs" component={Blogs} exact>
+            <Blogs />
           </Route>
           <Route path="/allProjects" component={AllProjects} exact>
             <AllProjects

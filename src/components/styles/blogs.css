@@ -1,0 +1,12 @@
+.blogs{
+    padding: 50px 0;
+}
+.blogs-header{
+    padding: 20px 0;
+    font-size: 1.7rem;
+    text-align: center;
+}
+.blog-card{
+    font-size: 1.3rem;
+    padding-top: 50px;
+}

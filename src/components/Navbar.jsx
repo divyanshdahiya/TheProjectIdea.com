@@ -24,9 +24,10 @@ function Navbar() {
           <Link to="/allProjects" className="nav-link">
             <li>All Projects </li>
           </Link>
-          <Link to="/contact" className="nav-link">
-            <li>Contact</li>
+          <Link to="/blogs" className="nav-link">
+            <li>Blogs</li>
           </Link>
+          
         </ul>
       </div>
       <button className="mobile-menu-icon" onClick={() => settoggle(!toggle)}>
