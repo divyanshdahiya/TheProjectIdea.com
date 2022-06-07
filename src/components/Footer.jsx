@@ -50,7 +50,12 @@ function Footer() {
                 <Link to="/allProjects">All Projects</Link>
               </li>
               <li>
-                <Link to="/">Github</Link>
+                <Link
+                  to={{ pathname: "https://github.com/divyanshdahiya" }}
+                  target="_blank"
+                >
+                  Github
+                </Link>
               </li>
               <li>
                 <Link to="/blogs">Blogs</Link>
