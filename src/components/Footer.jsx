@@ -19,12 +19,12 @@ function Footer() {
             </p>
             <ul className="social">
               <li>
-                <Link to="/" >
+                <Link to="/">
                   <i className="fa fa-facebook-official" aria-hidden="true"></i>
                 </Link>
               </li>
               <li>
-                <Link to="/" >
+                <Link to="/">
                   {/* <i class="fa fa-youtube-play" aria-hidden="true"></i> */}
                 </Link>
               </li>
@@ -44,20 +44,19 @@ function Footer() {
             <h2>Quick Links</h2>
             <ul>
               <li>
-              <Link to="/">Home</Link>
+                <Link to="/">Home</Link>
               </li>
               <li>
-              <Link to="/allProjects">All Projects</Link>
+                <Link to="/allProjects">All Projects</Link>
               </li>
               <li>
-              <Link to="/">Github</Link>
+                <Link to="/">Github</Link>
               </li>
               <li>
-              <Link to="/contact">Contact</Link>
+                <Link to="/blogs">Blogs</Link>
               </li>
             </ul>
-          </div>  
-         
+          </div>
         </div>
       </footer>
       <div className="copyright">
