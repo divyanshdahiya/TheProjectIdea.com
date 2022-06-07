@@ -1,5 +1,5 @@
 .blogs{
-    padding: 50px 0;
+    padding: 10px 0;
 }
 .blogs-header{
     padding: 20px 0;
@@ -9,4 +9,34 @@
 .blog-card{
     font-size: 1.3rem;
     padding-top: 50px;
+    width: 60%;
+}
+.blogs-image{
+    width: 60%;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1096px){
+    .blog-card{
+        width: 80%;
+    }
+    .blogs-image{
+        width: 80%;
+    }
+
+}
+@media screen and (max-width: 682px){
+    .blogs-header{
+        font-size: 1.4rem;
+    }
+    .blog-card{
+        font-size: 1.2rem;
+    }
+    .blog-card{
+        width: 90%;
+    }
+    .blogs-image{
+        width: 95%;
+    }
+
 }
