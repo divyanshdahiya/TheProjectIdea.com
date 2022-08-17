@@ -12,6 +12,7 @@ import ProjectDetail from "./components/ProjectDetail";
 import ScrollToTop from "./ScrollToTop";
 
 function App() {
+  const [Loading, setLoading] = useState(false);
   const [ListOfProjects, setListOfProjects] = useState([]);
   const [ProjectInfo, setProjectInfo] = useState({});
   const [ProjectId, setProjectId] = useState(`6223b9cf13d911bac674eff6`)
@@ -20,6 +21,7 @@ function App() {
     Axios.get("https://theprojectidea-divyansh.herokuapp.com/getProjects").then((response) => {
       setListOfProjects(response.data);
     });
+    setLoading(true);
   }, []);
 
   useEffect(() => {
@@ -51,6 +53,7 @@ function App() {
               ListOfProjects={ListOfProjects}
               setProjectInfo={setProjectInfo}
               setProjectId={setProjectId}
+              Loading={Loading}
             />
           </Route>
           <Route path="/about" component={About} exact>

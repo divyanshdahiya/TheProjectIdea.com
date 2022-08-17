@@ -3,7 +3,7 @@ import Header from "./Header";
 import FindProject from "./FindProject";
 import Quote from "./Quote";
 
-function Home({ ListOfProjects, setProjectInfo, setProjectId }) {
+function Home({ ListOfProjects, setProjectInfo, setProjectId, Loading }) {
   return (
     <div>
       <Header />
@@ -11,6 +11,7 @@ function Home({ ListOfProjects, setProjectInfo, setProjectId }) {
         ListOfProjects={ListOfProjects}
         setProjectInfo={setProjectInfo}
         setProjectId={setProjectId}
+        Loading={Loading}
       />
       <Quote />
     </div>
