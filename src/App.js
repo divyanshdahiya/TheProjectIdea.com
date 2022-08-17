@@ -20,8 +20,9 @@ function App() {
   useEffect(() => {
     Axios.get("https://theprojectidea-divyansh.herokuapp.com/getProjects").then((response) => {
       setListOfProjects(response.data);
+      setLoading(true)
     });
-    setLoading(true);
+    
   }, []);
 
   useEffect(() => {
